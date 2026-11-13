@@ -1,0 +1,45 @@
+================================================================================
+                    SRL LIMITED - COMPLETE EXECUTIVE WELLNESS PROFILE
+               NABL CERTIFIED NATIONAL ACCREDITATION NO. MC-0042
+================================================================================
+Patient Name: [PATIENT_MASKED]              Collected:  04-Nov-2026 07:30
+Age / Sex:    51 Y / Male                   Reported:   04-Nov-2026 18:00
+PID / UID:    [PID_MASKED]                  Client:     Corporate Annual Screening
+Doctor:       Dr. [DOCTOR_MASKED]           Status:     Final Verified
+================================================================================
+PANEL 1: GLYCEMIC STATUS
+Fasting Blood Sugar               112.0 *    mg/dL       70.0 - 99.0
+HbA1c                             6.1 *      %           < 5.7 (Normal)
+Average Estimated Glucose         128.0 *    mg/dL       90.0 - 120.0
+
+PANEL 2: LIPID PROFILE
+Total Cholesterol                 215.0 *    mg/dL       < 200.0
+Triglycerides                     185.0 *    mg/dL       < 150.0
+HDL Cholesterol                   42.0       mg/dL       > 40.0
+LDL Cholesterol                   136.0 *    mg/dL       < 100.0
+VLDL Cholesterol                  37.0 *     mg/dL       5.0 - 30.0
+
+PANEL 3: LIVER FUNCTION TEST
+Bilirubin Total                   0.90       mg/dL       0.20 - 1.20
+SGOT / AST                        32.0       U/L         5.0 - 40.0
+SGPT / ALT                        38.0       U/L         5.0 - 50.0
+Alkaline Phosphatase (ALP)        88.0       U/L         30.0 - 120.0
+Total Protein                     7.4        g/dL        6.4 - 8.3
+Serum Albumin                     4.5        g/dL        3.5 - 5.2
+
+PANEL 4: RENAL FUNCTION TEST
+Serum Creatinine                  1.05       mg/dL       0.70 - 1.20
+Blood Urea                        28.0       mg/dL       15.0 - 40.0
+Serum Uric Acid                   6.2        mg/dL       3.5 - 7.2
+Sodium (Na+)                      141.0      mEq/L       136.0 - 146.0
+Potassium (K+)                    4.30       mEq/L       3.50 - 5.10
+
+PANEL 5: THYROID & VITAMINS
+TSH - Ultraclear                  2.85       uIU/mL      0.35 - 4.94
+Vitamin D (25-OH)                 16.4 *     ng/mL       Deficiency: < 20
+                                                         Insufficiency: 20 - 29
+                                                         Sufficiency: >= 30
+Vitamin B12                       185.0 *    pg/mL       Normal: 211 - 911
+================================================================================
+Lab Director & Chief Pathologist: Dr. [PATHOLOGIST_MASKED]
+================================================================================

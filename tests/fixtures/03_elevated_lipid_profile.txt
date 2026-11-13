@@ -1,0 +1,38 @@
+================================================================================
+                    TATA 1MG TECHNOLOGIES PRIVATE LIMITED - LABS
+               NABL ACCREDITED CENTRAL REFERENCE LABORATORY, GURUGRAM
+================================================================================
+Patient Name: [PATIENT_MASKED]              Collected On:  10-Nov-2026 07:30
+Age / Sex:    49 Y / Male                   Received On:   10-Nov-2026 10:15
+Order ID:     [ORDER_MASKED]                Verified On:   10-Nov-2026 15:40
+Referred By:  Self / Dr. [DOCTOR_MASKED]    Sample:        Serum / Fluoride
+================================================================================
+LIPID PROFILE, EXTENDED PANEL
+================================================================================
+TEST PARAMETER                    MEASURED   UNIT        REFERENCE INTERVAL
+================================================================================
+Total Cholesterol                 245.0 *    mg/dL       Desirable: < 200.0
+                                                         Borderline: 200.0 - 239.0
+                                                         High: >= 240.0
+
+Triglycerides                     218.0 *    mg/dL       Normal: < 150.0
+                                                         Borderline: 150.0 - 199.0
+                                                         High: 200.0 - 499.0
+
+HDL Cholesterol (Good)            36.0 *     mg/dL       Optimal: > 40.0 (Male)
+                                                         High Protection: > 60.0
+
+LDL Cholesterol (Bad, Calculated) 165.4 *    mg/dL       Optimal: < 100.0
+                                                         Near Optimal: 100 - 129
+                                                         Borderline High: 130 - 159
+                                                         High: >= 160.0
+
+VLDL Cholesterol                  43.6 *     mg/dL       Normal: 5.0 - 30.0
+
+Cholesterol / HDL Ratio           6.8 *      ratio       Desirable: 3.3 - 4.4
+                                                         High Risk: > 5.0
+LDL / HDL Ratio                   4.6 *      ratio       Desirable: 0.5 - 3.0
+================================================================================
+Remarks: Patient was on 12 hours overnight fast.
+Senior Consultant Pathologist: Dr. [PATHOLOGIST_MASKED]
+================================================================================

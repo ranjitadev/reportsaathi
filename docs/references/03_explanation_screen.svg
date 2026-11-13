@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 844" width="390" height="844" style="background:#F8FAFC;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Noto Sans Devanagari',sans-serif;">
+  <!-- Status Bar -->
+  <rect width="390" height="44" fill="#0F766E"/>
+  <text x="32" y="28" fill="#FFFFFF" font-size="14" font-weight="600">9:43</text>
+  <text x="340" y="28" fill="#FFFFFF" font-size="12">5G 92%</text>
+
+  <!-- App Header with Language Toggle -->
+  <rect y="44" width="390" height="60" fill="#0F766E"/>
+  <text x="20" y="80" fill="#FFFFFF" font-size="20">←</text>
+  <text x="50" y="80" fill="#FFFFFF" font-size="18" font-weight="bold">Report Summary</text>
+  
+  <rect x="270" y="58" width="100" height="32" rx="16" fill="#134E4A"/>
+  <text x="282" y="79" fill="#CCFBF1" font-size="13">EN</text>
+  <rect x="306" y="60" width="60" height="28" rx="14" fill="#0F766E"/>
+  <text x="320" y="79" fill="#FFFFFF" font-size="13" font-weight="bold">हिंदी</text>
+
+  <!-- Calm Summary Reassurance Banner -->
+  <rect x="20" y="118" width="350" height="85" rx="14" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1.5"/>
+  <text x="36" y="145" fill="#065F46" font-size="16" font-weight="bold">कुल ३ टेस्ट: १ सामान्य, २ थोड़े बाहर</text>
+  <text x="36" y="170" fill="#047857" font-size="13">घबराएं नहीं: थोड़े कम या ज्यादा नंबर बहुत आम होते हैं और अक्सर खान-पान या तनाव से बदलते हैं।</text>
+
+  <!-- Section 1: Attention Tests (Outside range) -->
+  <text x="20" y="225" fill="#0F172A" font-size="17" font-weight="bold">डॉक्टर से चर्चा के बिंदु (Points to Discuss)</text>
+
+  <!-- Explanation Card 1: Fasting Blood Sugar -->
+  <rect x="20" y="240" width="350" height="235" rx="14" fill="#FFFFFF" stroke="#FDE68A" stroke-width="1.5"/>
+  
+  <text x="36" y="270" fill="#0F172A" font-size="16" font-weight="bold">फास्टिंग ब्लड शुगर (Fasting Glucose)</text>
+  <rect x="235" y="255" width="120" height="24" rx="6" fill="#FEF3C7"/>
+  <text x="245" y="271" fill="#B45309" font-size="12" font-weight="600">▲ थोड़ा अधिक (High)</text>
+
+  <text x="36" y="300" fill="#B45309" font-size="20" font-weight="bold">138 mg/dL <tspan fill="#64748B" font-size="13" font-weight="normal">(सामान्य: 70 - 99)</tspan></text>
+
+  <line x1="36" y1="315" x2="354" y2="315" stroke="#F1F5F9" stroke-width="1"/>
+
+  <!-- Body Explanation in Hindi & English -->
+  <text x="36" y="338" fill="#0F172A" font-size="14" font-weight="600">यह टेस्ट क्या बताता है?</text>
+  <text x="36" y="358" fill="#334155" font-size="13">यह बताता है कि रात भर (८ घंटे) भूखे रहने के बाद आपके खून में शक्कर की मात्रा कितनी है।</text>
+
+  <text x="36" y="388" fill="#0F172A" font-size="14" font-weight="600">बढ़ने के आम कारण:</text>
+  <text x="36" y="408" fill="#475569" font-size="13">• पिछली रात भारी या मीठा भोजन करना</text>
+  <text x="36" y="426" fill="#475569" font-size="13">• तनाव (Stress), नींद की कमी या शारीरिक गतिविधि कम होना</text>
+  <text x="36" y="445" fill="#475569" font-size="13">• इंसुलिन प्रतिरोध (प्री-डायबिटीज की संभावना)</text>
+
+  <rect x="36" y="455" width="318" height="15" fill="transparent"/>
+
+  <!-- Normal Tests Accordion (Collapsed) -->
+  <rect x="20" y="490" width="350" height="52" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="36" y="522" fill="#15803D" font-size="15" font-weight="bold">✓ सामान्य टेस्ट (1 Normal Test: Hemoglobin)</text>
+  <text x="340" y="522" fill="#64748B" font-size="16">▼</text>
+
+  <!-- Statutory Safe Harbor Card -->
+  <rect x="20" y="560" width="350" height="80" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="32" y="585" fill="#64748B" font-size="12">⚠️ <tspan font-weight="bold">महत्वपूर्ण सूचना:</tspan> यह केवल स्वास्थ्य साक्षरता जानकारी है, कोई चिकित्सीय निदान नहीं। दवा शुरू या बंद करने से पहले डॉक्टर से मिलें।</text>
+  <text x="32" y="625" fill="#94A3B8" font-size="11">Complies with Telemedicine Guidelines 2020 &amp; DPDP Act 2023.</text>
+
+  <!-- Sticky Bottom Next Button -->
+  <rect y="725" width="390" height="119" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="20" y="745" width="350" height="56" rx="14" fill="#0F766E"/>
+  <text x="80" y="779" fill="#FFFFFF" font-size="17" font-weight="bold">Next: Get 3 Doctor Questions →</text>
+  <text x="105" y="794" fill="#CCFBF1" font-size="12">आगे: डॉक्टर से पूछने के ३ सवाल पाएं</text>
+</svg>

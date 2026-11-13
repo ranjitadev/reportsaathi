@@ -1,0 +1,31 @@
+================================================================================
+               APOLLO HOSPITALS EMERGENCY BIOCHEMISTRY & HAEMATOLOGY
+               STAT / CRITICAL CARE LABORATORY | NEW DELHI
+================================================================================
+Patient Name: [PATIENT_MASKED]              Sample Time:   05-Nov-2026 22:15
+Age / Sex:    68 Y / Female                 Report Time:   05-Nov-2026 23:02
+UHID:         [UHID_MASKED]                 Ward / Bed:    Emergency Dept / Triage
+Physician:    Dr. [DOCTOR_MASKED]           Priority:      STAT / EMERGENCY
+================================================================================
+*** CRITICAL PANIC VALUES DETECTED - TELEPHONIC CALL GIVEN TO DUTY DOCTOR ***
+================================================================================
+INVESTIGATION                     RESULT     UNITS       REFERENCE INTERVAL
+================================================================================
+PLATELET COUNT                    14,000 *** /cu.mm      150,000 - 450,000
+(Verified by Peripheral Blood Smear - Severe Life-Threatening Thrombocytopenia)
+
+SERUM POTASSIUM (K+)              6.85 ***   mEq/L       3.50 - 5.10
+(Sample checked for hemolysis: NIL. True severe hyperkalemia)
+
+SERUM SODIUM (Na+)                129.0 *    mEq/L       136.0 - 146.0
+
+RANDOM BLOOD GLUCOSE              425.0 ***  mg/dL       70.0 - 140.0
+(Marked hyperglycemia - Check for urine ketones / arterial blood gas)
+
+Serum Creatinine                  2.85 ***   mg/dL       0.60 - 1.10
+Blood Urea                        88.0 ***   mg/dL       15.0 - 40.0
+================================================================================
+*** CRITICAL VALUE NOTIFICATION: Result phoned to Dr. [DOCTOR_MASKED] at 23:05 hrs.
+Action Required: Immediate in-patient emergency cardiac monitoring & stabilization.
+Senior Pathologist On Duty: Dr. [PATHOLOGIST_MASKED]
+================================================================================

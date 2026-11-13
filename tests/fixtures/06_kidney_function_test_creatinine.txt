@@ -1,0 +1,33 @@
+================================================================================
+                    MAX LAB (MAX HEALTHCARE INSTITUTE) - NEW DELHI
+               NABL ACCREDITED CLINICAL BIOCHEMISTRY DEPARTMENT
+================================================================================
+Patient Name: [PATIENT_MASKED]              Collected:  07-Nov-2026 08:00
+Age / Sex:    62 Y / Male                   Reported:   07-Nov-2026 13:20
+UHID:         [UHID_MASKED]                 Prescriber: Dr. [DOCTOR_MASKED]
+Sample ID:    [SAMPLE_MASKED]               Panel:      Renal Profile / KFT
+================================================================================
+KIDNEY FUNCTION TEST (KFT / RFT)
+================================================================================
+PARAMETER                         RESULT     UNITS       REFERENCE RANGE
+================================================================================
+Blood Urea Nitrogen (BUN)         26.4 *     mg/dL       7.0 - 20.0
+Blood Urea                        56.5 *     mg/dL       15.0 - 40.0
+Serum Creatinine (Enzymatic)      1.48 *     mg/dL       0.70 - 1.20 (Male)
+BUN / Serum Creatinine Ratio      17.8       ratio       10.0 - 20.0
+
+Serum Uric Acid                   6.4        mg/dL       3.5 - 7.2
+
+SERUM ELECTROLYTES
+Sodium (Na+)                      139.0      mEq/L       136.0 - 146.0
+Potassium (K+)                    4.45       mEq/L       3.50 - 5.10
+Chloride (Cl-)                    102.0      mEq/L       98.0 - 107.0
+
+eGFR (Estimated Glomerular Filt.) 56.2 *     mL/min      Normal: > 90
+                                                         Mild Reduction: 60 - 89
+                                                         Moderate Reduction: 30 - 59
+================================================================================
+Remarks: Creatinine is mildly elevated. Please review patient hydration status, 
+hypertension history, and protein intake prior to staging.
+Reporting Pathologist: Dr. [PATHOLOGIST_MASKED]
+================================================================================

@@ -1,0 +1,33 @@
+================================================================================
+                    AGILUS DIAGNOSTICS LIMITED (FORMERLY SRL DIAGNOSTICS)
+               CENTRE OF EXCELLENCE - PATHOLOGY | BENGALURU
+================================================================================
+Patient Name: [PATIENT_MASKED]              Date of Booking: 08-Nov-2026 09:10
+Age / Sex:    45 Y / Male                   Date of Report:  08-Nov-2026 17:30
+Accession ID: [ACC_MASKED]                  Client Location: Whitefield, Bengaluru
+Doctor:       Dr. [DOCTOR_MASKED]           Specimen:        Serum
+================================================================================
+LIVER FUNCTION TEST (LFT) COMPLETE
+================================================================================
+INVESTIGATION                     RESULT     UNIT        NORMAL REFERENCE INTERVAL
+================================================================================
+Bilirubin Total                   0.85       mg/dL       0.20 - 1.20
+Bilirubin Direct (Conjugated)     0.22       mg/dL       0.00 - 0.30
+Bilirubin Indirect                0.63       mg/dL       0.10 - 0.90
+
+SGOT / AST (Aspartate Amino.)     48.0 *     U/L         5.0 - 40.0
+SGPT / ALT (Alanine Amino.)       68.0 *     U/L         5.0 - 50.0
+AST / ALT Ratio                   0.70       ratio       Normal: < 1.0
+
+Alkaline Phosphatase (ALP)        94.0       U/L         30.0 - 120.0
+Gamma Glutamyl Transferase (GGT)  38.0       U/L         10.0 - 55.0
+
+Total Protein                     7.2        g/dL        6.4 - 8.3
+Serum Albumin                     4.3        g/dL        3.5 - 5.2
+Serum Globulin                    2.9        g/dL        2.0 - 3.5
+Albumin / Globulin Ratio (A/G)    1.48       ratio       1.0 - 2.2
+================================================================================
+Note: Mild isolated elevation of ALT/SGPT can be observed following recent intake 
+of common NSAIDs, statins, intense muscular exercise, or fatty liver changes.
+Chief Pathologist: Dr. [PATHOLOGIST_MASKED]
+================================================================================

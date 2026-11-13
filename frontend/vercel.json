@@ -1,0 +1,9 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "version": 2,
+  "name": "reportsaathi-frontend",
+  "framework": "nextjs",
+  "installCommand": "npm ci --workspace=frontend --include-workspace-root",
+  "buildCommand": "npm run build -w shared && npm run build -w frontend",
+  "outputDirectory": "frontend/.next"
+}

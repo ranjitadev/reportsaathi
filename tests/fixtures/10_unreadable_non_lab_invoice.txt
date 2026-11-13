@@ -1,0 +1,26 @@
+================================================================================
+                    APOLLO PHARMACY - RETAIL TAX INVOICE / CASH BILL
+               APOLLO HOSPITALS ENTERPRISE LTD. | GSTIN: 36AAACA1234A1Z5
+================================================================================
+Invoice No:    INV-HYD-98421045             Date:          03-Nov-2026 18:24
+Customer:      [PATIENT_MASKED]             Payment Mode:  UPI / PhonePe
+Phone:         [PHONE_MASKED]               Store No:      STR-0428 Banjara Hills
+Doctor Name:   Dr. [DOCTOR_MASKED]          Reg No:        TSMC-54912
+================================================================================
+S.No  ITEM DESCRIPTION         HSN/SAC   QTY   BATCH     EXPIRY    MRP     AMOUNT
+================================================================================
+1     TELMA 40MG TAB 15S       300490    2     B94201    08/2028   245.00  490.00
+2     GLYCOMET GP 1MG TAB 15S  300490    2     G81104    11/2027   180.00  360.00
+3     ROSUVAS 10MG TAB 10S     300490    3     R30219    05/2028   210.00  630.00
+4     EVION 400MG CAPS 10S     300450    1     E74102    01/2029    45.50   45.50
+5     VOLINI GEL 30GM          300490    1     V11209    10/2027   125.00  125.00
+================================================================================
+Total Items: 5                            Sub Total:               Rs. 1,650.50
+CGST @ 6%:                                Rs. 99.03
+SGST @ 6%:                                Rs. 99.03
+Round Off:                                (-) Rs. 0.56
+NET AMOUNT PAYABLE:                       Rs. 1,848.00
+================================================================================
+Thank you for shopping with Apollo Pharmacy! Wish you a speedy recovery.
+Goods once sold cannot be returned without original cash memo.
+================================================================================

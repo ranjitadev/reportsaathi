@@ -1,0 +1,28 @@
+================================================================================
+                    APOLLO DIAGNOSTICS - CLINICAL PATHOLOGY DIVISION
+               APOLLO HEALTH AND LIFESTYLE LTD. | HYDERABAD REGIONAL LAB
+================================================================================
+Patient Name: [PATIENT_MASKED]              Collected:     09-Nov-2026 08:45
+Age / Sex:    36 Y / Female                 Authorized:    09-Nov-2026 14:00
+PID / Lab ID: [PID_MASKED]                  Sample Matrix: Serum
+Ref Doctor:   Dr. [DOCTOR_MASKED]           Method:        Chemiluminescent Immunoassay
+================================================================================
+THYROID FUNCTION PROFILE - TOTAL (CLIA)
+================================================================================
+TEST NAME                         RESULT     UNITS       BIOLOGICAL REFERENCE
+================================================================================
+Triiodothyronine (Total T3)       92.0       ng/dL       60.0 - 181.0
+
+Thyroxine (Total T4)              5.8        ug/dL       4.5 - 12.0
+
+Thyroid Stimulating Hormone (TSH) 8.65 *     uIU/mL      Adults: 0.35 - 4.94
+                                                         Pregnancy 1st Tri: 0.1 - 2.5
+                                                         Pregnancy 2nd Tri: 0.2 - 3.0
+                                                         Pregnancy 3rd Tri: 0.3 - 3.0
+================================================================================
+Clinical Interpretation:
+Elevated TSH with normal circulating T3 and T4 levels is classically consistent 
+with Subclinical Hypothyroidism. Note that TSH exhibits marked diurnal variation 
+and levels may peak in early morning. Clinical correlation suggested.
+Authorized Medical Signatory: Dr. [PATHOLOGIST_MASKED]
+================================================================================

@@ -1,0 +1,31 @@
+================================================================================
+                    DR. LAL PATHLABS LTD. - NATIONAL REFERENCE LAB
+               NABL ACCREDITED CERTIFICATE NO. MC-2011 | NEW DELHI
+================================================================================
+Patient Name: [PATIENT_MASKED]              Sample Collected: 11-Nov-2026 07:15
+Age / Sex:    54 Y / Female                 Sample Received:  11-Nov-2026 09:30
+UHID / Lab No:[UHID_MASKED]                 Report Released:  11-Nov-2026 13:45
+Ref Doctor:   Dr. [DOCTOR_MASKED]           Fasting Status:   10 Hours Fasting
+================================================================================
+TEST NAME                         VALUE      UNIT        BIO. REF. INTERVAL
+================================================================================
+GLUCOSE, FASTING (HEXOKINASE METHOD)
+Glucose Fasting                   142.0 *    mg/dL       70.0 - 99.0
+                                                         Normal: 70 - 99
+                                                         Pre-diabetes: 100 - 125
+                                                         Diabetes: >= 126
+
+GLYCOSYLATED HEMOGLOBIN (HbA1c) - HPLC METHOD
+HbA1c (Glycated Hb)               6.8 *      %           Non-diabetic: < 5.7
+                                                         Pre-diabetic: 5.7 - 6.4
+                                                         Diabetic: >= 6.5
+Estimated Average Glucose (eAG)   148.5 *    mg/dL       Normal: 90 - 120
+
+URINE ROUTINE EXAMINATION
+Urine Glucose                     Nil        mg/dL       Nil / Negative
+Urine Protein / Albumin           Nil                    Nil / Negative
+Urine Ketones                     Negative               Negative
+================================================================================
+* Asterisk indicates values outside standard reference limits.
+Pathologist Sign: Dr. [PATHOLOGIST_MASKED], MBBS, MD (Path)
+================================================================================

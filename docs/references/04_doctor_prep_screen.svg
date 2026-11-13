@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 844" width="390" height="844" style="background:#F8FAFC;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Noto Sans Devanagari',sans-serif;">
+  <!-- Status Bar -->
+  <rect width="390" height="44" fill="#0F766E"/>
+  <text x="32" y="28" fill="#FFFFFF" font-size="14" font-weight="600">9:44</text>
+  <text x="340" y="28" fill="#FFFFFF" font-size="12">5G 92%</text>
+
+  <!-- App Header -->
+  <rect y="44" width="390" height="60" fill="#0F766E"/>
+  <text x="20" y="80" fill="#FFFFFF" font-size="20">←</text>
+  <text x="50" y="80" fill="#FFFFFF" font-size="18" font-weight="bold">Doctor Consultation Prep</text>
+  <text x="50" y="96" fill="#CCFBF1" font-size="12">डॉक्टर से मिलने की तैयारी</text>
+
+  <!-- Hero Reassurance Card -->
+  <rect x="20" y="118" width="350" height="75" rx="14" fill="#F0FDFA" stroke="#99F6E4" stroke-width="1.5"/>
+  <text x="36" y="145" fill="#0F766E" font-size="16" font-weight="bold">Make the Most of Your 5-Minute Visit</text>
+  <text x="36" y="170" fill="#115E59" font-size="13">डॉक्टर के पास समय कम होता है। ये ३ सवाल पूछकर सही सलाह पाएं:</text>
+
+  <!-- The 3 Smart Questions Stack -->
+  <!-- Question 1 -->
+  <rect x="20" y="208" width="350" height="100" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+  <rect x="34" y="222" width="28" height="28" rx="6" fill="#0F766E"/>
+  <text x="43" y="242" fill="#FFFFFF" font-size="16" font-weight="bold">1</text>
+  <text x="72" y="240" fill="#0F172A" font-size="15" font-weight="bold">ब्लड शुगर (Fasting 138 mg/dL) पर:</text>
+  <text x="36" y="270" fill="#334155" font-size="13">"डॉक्टर साहब, मेरा खाली पेट शुगर १३८ आया है—क्या इसके लिए अभी सिर्फ खान-पान बदलना है या दवा की जरूरत है?"</text>
+  <text x="36" y="295" fill="#64748B" font-size="12">("Does my 138 fasting sugar need diet changes or medication?")</text>
+
+  <!-- Question 2 -->
+  <rect x="20" y="320" width="350" height="100" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+  <rect x="34" y="334" width="28" height="28" rx="6" fill="#0F766E"/>
+  <text x="43" y="354" fill="#FFFFFF" font-size="16" font-weight="bold">2</text>
+  <text x="72" y="352" fill="#0F172A" font-size="15" font-weight="bold">औसत शुगर (HbA1c 6.2%) पर:</text>
+  <text x="36" y="382" fill="#334155" font-size="13">"मेरा ३ महीने का औसत ६.२% है। क्या मुझे प्रीडायबिटीज है और इसे कितने दिन बाद दोबारा जांचना चाहिए?"</text>
+  <text x="36" y="407" fill="#64748B" font-size="12">("Is this pre-diabetes, and when should I repeat the test?")</text>
+
+  <!-- Question 3 -->
+  <rect x="20" y="432" width="350" height="100" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+  <rect x="34" y="446" width="28" height="28" rx="6" fill="#0F766E"/>
+  <text x="43" y="466" fill="#FFFFFF" font-size="16" font-weight="bold">3</text>
+  <text x="72" y="464" fill="#0F172A" font-size="15" font-weight="bold">रोजमर्रा की सावधानी पर:</text>
+  <text x="36" y="494" fill="#334155" font-size="13">"क्या मुझे रोजाना टहलना शुरू करना चाहिए और खाने में चावल/मीठे में क्या परहेज करना होगा?"</text>
+  <text x="36" y="519" fill="#64748B" font-size="12">("What specific dietary and exercise precautions should I follow?")</text>
+
+  <!-- Checklist Box: What to tell the doctor -->
+  <rect x="20" y="545" width="350" height="75" rx="12" fill="#F1F5F9"/>
+  <text x="35" y="570" fill="#334155" font-size="13" font-weight="bold">📋 डॉक्टर को बताना न भूलें (Don't Forget to Tell):</text>
+  <text x="35" y="592" fill="#475569" font-size="12">✓ जो दवाइयां आप पहले से ले रहे हैं  ✓ क्या आप जांच से पहले ८ घंटे भूखे थे</text>
+  <text x="35" y="608" fill="#475569" font-size="12">✓ कोई आयुर्वेदिक या घरेलू नुस्खा ले रहे हों तो उसका नाम</text>
+
+  <!-- Sticky Bottom Action Bar with WhatsApp Share -->
+  <rect y="695" width="390" height="149" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  
+  <!-- WhatsApp Share Button (Official Green #25D366) -->
+  <rect x="20" y="710" width="350" height="56" rx="14" fill="#25D366"/>
+  <text x="85" y="744" fill="#FFFFFF" font-size="17" font-weight="bold">💬 Share Card on WhatsApp</text>
+  <text x="120" y="759" fill="#F0FDF4" font-size="12">व्हाट्सएप पर सवाल कार्ड भेजें</text>
+
+  <!-- Secondary Action: Save Image / Print -->
+  <rect x="20" y="776" width="350" height="46" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="120" y="804" fill="#0F766E" font-size="14" font-weight="600">📥 Save as 1-Page Summary Card</text>
+</svg>

@@ -1,0 +1,38 @@
+================================================================================
+                    DR. REDDY'S PATH LABS - FEVER WORKUP PANEL
+               CENTRAL DIAGNOSTIC LABORATORY | CHENNAI
+================================================================================
+Patient Name: [PATIENT_MASKED]              Collected:     06-Nov-2026 11:30
+Age / Sex:    28 Y / Male                   Report Status: Final Verified
+SID / Reg No: [SID_MASKED]                  Clinical History: Acute High Grade Fever, Chills
+Attending:    Dr. [DOCTOR_MASKED]           Sample:        EDTA Whole Blood + Serum
+================================================================================
+FEVER PANEL & ARBOVIRUS SCREENING
+================================================================================
+TEST NAME                         RESULT     UNITS       REFERENCE INTERVAL
+================================================================================
+COMPLETE BLOOD COUNT (CBC)
+Hemoglobin                        15.6       g/dL        13.0 - 17.0
+Hematocrit (PCV)                  46.8 *     %           40.0 - 50.0 (High Normal)
+Total Leukocyte Count (TLC)       3,200 *    cells/cu.mm 4,000 - 11,000 (Leukopenia)
+
+DIFFERENTIAL COUNT:
+Neutrophils                       44         %           40 - 70
+Lymphocytes                       48 *       %           20 - 40
+Monocytes                         6          %           2 - 8
+Eosinophils                       2          %           1 - 6
+
+PLATELET COUNT                    62,000 *   /cu.mm      150,000 - 450,000
+                                                         (Thrombocytopenia)
+
+SEROLOGY / VIRAL ANTIGEN:
+Dengue Virus NS1 Antigen (ELISA)  POSITIVE               Negative
+Dengue IgM Antibodies (ELISA)     POSITIVE               Negative
+Dengue IgG Antibodies (ELISA)     Negative               Negative
+Malaria Parasite (Smear & Ag)     Not Detected           Not Detected
+Widal Test (Typhoid Slide)        Negative (< 1:40)      Negative (< 1:80)
+================================================================================
+CLINICAL ALERT: Acute Dengue Serology Positive with marked Thrombocytopenia (Platelets 62,000). 
+Monitor serial platelet counts every 24 hours. Advise adequate oral hydration.
+Authorized Signatory: Dr. [PATHOLOGIST_MASKED], MD Micro/Path
+================================================================================

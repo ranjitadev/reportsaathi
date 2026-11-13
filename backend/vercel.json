@@ -1,0 +1,24 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "version": 2,
+  "name": "reportsaathi-backend",
+  "framework": "nextjs",
+  "installCommand": "npm ci --workspace=backend --include-workspace-root",
+  "buildCommand": "npm run build -w shared && npm run build -w backend",
+  "outputDirectory": "backend/.next",
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+name: CI
+
+on:
+  push:
+    branches: [main, task-*]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # ─────────────────────────────────────────────────────────────
+  # 1. Lint + Typecheck + Unit Tests (all three workspaces)
+  # ─────────────────────────────────────────────────────────────
+  quality:
+    name: Quality Gates
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        workspace: [shared, backend, frontend]
+    defaults:
+      run:
+        working-directory: ${{ matrix.workspace }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install root dependencies
+        working-directory: .
+        run: npm ci
+
+      - name: Install workspace dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Type check
+        run: npm run typecheck
+
+      - name: Unit tests
+        run: npm run test
+
+  # ─────────────────────────────────────────────────────────────
+  # 2. Format check (once, at root)
+  # ─────────────────────────────────────────────────────────────
+  format:
+    name: Prettier Format Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run format:check
+
+  # ─────────────────────────────────────────────────────────────
+  # 3. Build both apps (must succeed before deploy)
+  # ─────────────────────────────────────────────────────────────
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    needs: [quality, format]
+    strategy:
+      matrix:
+        workspace: [backend, frontend]
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm ci
+      - name: Build shared first
+        run: npm run build -w shared
+      - name: Build ${{ matrix.workspace }}
+        working-directory: ${{ matrix.workspace }}
+        env:
+          NEXT_PUBLIC_BACKEND_URL: ${{ secrets.NEXT_PUBLIC_BACKEND_URL }}
+          GEMINI_API_KEY: placeholder_not_used_in_build
+        run: npm run build
+
+  # ─────────────────────────────────────────────────────────────
+  # 4. Deploy to Vercel staging (preview)
+  #    Both backend and frontend get a unique preview URL per branch.
+  # ─────────────────────────────────────────────────────────────
+  deploy-backend-preview:
+    name: Deploy Backend (Preview)
+    runs-on: ubuntu-latest
+    needs: [build]
+    if: github.event_name == 'push'
+    environment: staging
+    outputs:
+      preview_url: ${{ steps.vercel-backend.outputs.url }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm ci
+      - run: npm install -g vercel@latest
+
+      - name: Pull Vercel project settings (backend)
+        working-directory: backend
+        run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_BACKEND_PROJECT_ID }}
+
+      - name: Build for Vercel (backend)
+        working-directory: backend
+        run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_BACKEND_PROJECT_ID }}
+
+      - name: Deploy to Vercel (backend preview)
+        id: vercel-backend
+        working-directory: backend
+        run: |
+          url=$(vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }})
+          echo "url=$url" >> $GITHUB_OUTPUT
+          echo "Backend preview: $url"
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_BACKEND_PROJECT_ID }}
+
+  deploy-frontend-preview:
+    name: Deploy Frontend (Preview)
+    runs-on: ubuntu-latest
+    needs: [deploy-backend-preview]
+    environment: staging
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm ci
+      - run: npm install -g vercel@latest
+
+      - name: Pull Vercel project settings (frontend)
+        working-directory: frontend
+        run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_FRONTEND_PROJECT_ID }}
+
+      - name: Build for Vercel (frontend)
+        working-directory: frontend
+        run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_FRONTEND_PROJECT_ID }}
+          NEXT_PUBLIC_BACKEND_URL: ${{ needs.deploy-backend-preview.outputs.preview_url }}
+
+      - name: Deploy to Vercel (frontend preview)
+        id: vercel-frontend
+        working-directory: frontend
+        run: |
+          url=$(vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }})
+          echo "url=$url" >> $GITHUB_OUTPUT
+          echo "Frontend preview: $url"
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_FRONTEND_PROJECT_ID }}
+
+  # ─────────────────────────────────────────────────────────────
+  # 5. Smoke test against deployed staging URLs
+  # ─────────────────────────────────────────────────────────────
+  smoke:
+    name: Smoke Tests (Playwright)
+    runs-on: ubuntu-latest
+    needs: [deploy-frontend-preview, deploy-backend-preview]
+    environment: staging
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm ci
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+
+      - name: Run smoke tests
+        env:
+          PLAYWRIGHT_FRONTEND_URL: ${{ needs.deploy-frontend-preview.outputs.url }}
+          PLAYWRIGHT_BACKEND_URL: ${{ needs.deploy-backend-preview.outputs.preview_url }}
+          CI: true
+        run: npm run test:smoke
+
+      - name: Upload Playwright report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 7
